@@ -41,6 +41,7 @@ function App() {
       setDeck(cards);
       setDrawnCards([]);
       setCardsLoaded(true);
+      shuffleDeck();
     } catch (error) {
       console.error("Error loading zip file:", error);
       alert("Error loading the card deck. Please try again.");
